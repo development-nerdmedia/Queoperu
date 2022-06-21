@@ -727,6 +727,10 @@
     text-transform: none;
   }
 
+  .bgfixed_soporte button:hover{
+    text-decoration: none;
+  }
+
   .bgfixed_soporte label {
     border-bottom: 2px solid #c8ced6;
     padding-left: 4px;
