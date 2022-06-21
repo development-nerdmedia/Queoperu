@@ -695,7 +695,7 @@
     font-family: 'Lato';
     font-weight: 400;
     font-size: 15px;
-    padding: 7px 7px 7px 35px;
+    padding: 6px 7px 8px 35px;
     color: #606060;
   }
 
@@ -704,7 +704,7 @@
     outline: none !important;
     appearance: none;
     color: #606060;
-    padding: 7px 7px 7px 35px;
+    padding: 4px 7px 10px 35px;
     font-family: 'Lato';
     font-weight: 400;
     font-size: 15px;
@@ -736,6 +736,7 @@
   .bgfixed_soporte label .soporte_tipo_solicitud{
     position: relative;
     margin-bottom: 22px;
+    z-index: 2;
   }
 
   .bgfixed_soporte label .soporte_tipo_solicitud::before{
@@ -744,11 +745,11 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 8px;
-    top: 6px;
+    top: 3px;
     content: "";
     width: 20px;
     height: 14px;
-    z-index: 1;
+    z-index: -1;
   }
 
   .bgfixed_soporte label:first-child{
