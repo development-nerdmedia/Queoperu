@@ -66,7 +66,7 @@
     padding: 0;
     margin: 0 auto;
     padding-top: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
   }
   
@@ -117,7 +117,7 @@
   header .session {
     position: absolute;
     right: 150px;
-    bottom: 5px;
+    bottom: -47px;
     background: #f4d903;
     width: 160px;
     height: 40px;
@@ -137,7 +137,12 @@
   header .soporte{
     position: absolute;
     right: 0;
-    bottom: 5px;
+    bottom: -47px;
+    /* transition: 0.2s linear; */
+  }  
+
+  header .soporte:hover{
+    right: -55px;
   }
 
   header .soporte a{
@@ -151,11 +156,35 @@
     padding: 3px 15px;
     border-radius: 5px;
     border: 2px solid #51ab90;
+    /* width: 121.83px; */
+    /* transition: width 0.2s linear; */
+  }
+
+  header .soporte a span{
+    margin-left: 5px;
+    display: none;
+    color: #fff;
+    /* visibility: hidden; */    
+    /* animation: aparece 5s linear infinite; */
   }
 
   header .soporte a:hover{
     background-color: #51ab90;
     color: #fff;
+    /* width: 176.06px; */
+  }
+
+  header .soporte a:hover span{
+    display: block;
+  }
+
+  @keyframes aparece {
+    0% {
+      display: none;
+    }
+    100% {
+      display: block;
+    }
   }
 
   header .soporte a img{
