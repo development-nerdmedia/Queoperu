@@ -556,9 +556,17 @@
     border-radius: 20px;
     padding: 30px;
   }
-  .close i{
+
+  /* codigo opcional por el imagen de la X centrada*/
+  .close_soporte i,
+  .close i,
+  .close_novedades i,
+  .close_feedback i,
+  .close_sesion i,
+  .close_privacidad i{
     margin-top: 6.5px;
   }
+  /*  end del codigo opcional*/
 
   .bloque-soporte .info p{
     font-family: 'Lato';
@@ -666,7 +674,7 @@
   }
   
   .bgfixed .close,
-  .bgfixed_soporte .close,
+  .bgfixed_soporte .close_soporte,
   .bgfixed_novedades .close_novedades,
   .close_privacidad,
   .close_feedback,
@@ -789,6 +797,12 @@
   .bgfixed_feedback .contenido_popup {
     margin-top: -200px;
   }
+
+  .bgfixed_soporte .contenido_popup {
+    top: 50%;
+    margin: -250px auto 0;
+    position: relative;
+  }
   
   .bgfixed_sesion .contenido_popup {
     padding: 30px 55px 10px 55px;
@@ -796,9 +810,15 @@
   }
   
   .bgfixed_feedback .contenido_popup iframe,
-  .bgfixed_sesion .contenido_popup iframe {
+  .bgfixed_sesion .contenido_popup iframe,
+  .bgfixed_soporte .contenido_popup iframe {
     width: 100% !important;
     border: 0;
+  }
+
+  .bgfixed_soporte .contenido_popup{
+    padding: 20px;
+    border-radius: 15px;
   }
   
   .bgfixed_sesion .contenido_popup img {
